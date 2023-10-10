@@ -8,6 +8,33 @@
     <title>Biglietto treno</title>
 </head>
 <body>
+    <div class="wrapper">  
+        <div class="container vh-100 border">
+          <div class="row mt-3">  
+            <form class="d-flex justify-content-around">
+              <div class="d-flex flex-column">  
+                <label for="fname">Nome e Cognome</label>
+                <input type="text" id="fname" name="fname" value="Jon Snow">
+              </div>  
+              <div class="d-flex flex-column">
+                <label for="lname">Km da percorrere</label>
+                <input type="text" id="lname" name="lname" value="10">
+              </div>
+              <div class="d-flex">
+                <select name="cars" id="cars">
+                    <option value="minorenne">Minorenne</option>
+                    <option value="maggiorenne">Maggiorenne</option>
+                    <option value="over-65">Over-65</option>
+                </select>
+              </div>  
+            </form>
+            <div class="text-center">
+                <button class="m-3 btn btn-secondary">Genera</button>
+                <button class="m-3 btn btn-secondary">Annulla</button>
+            </div>
+          </div>  
+        </div>    
+    </div> 
     <script src="js/script.js"></script>
 </body>
 </html>
