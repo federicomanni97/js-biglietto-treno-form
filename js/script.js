@@ -1,6 +1,7 @@
 let nameSurname = document.getElementById('nome-cognome');
 let numberCode = document.getElementById('code');
 let ticketPrice = document.getElementById('price');
+let tripTicket = document.getElementById ('trip-ticket');
 
 const button =  document.querySelector('.btn-success');
 console.log(button);
@@ -40,6 +41,8 @@ button.addEventListener('click', function(){
     nameSurname.innerHTML = nome;
     numberCode.innerHTML = getRndInteger(10000, 99999);
     ticketPrice.innerHTML = fullPrice;
+    tripTicket.classList.remove('d-none');
+
 
     console.log(nome);
     console.log(kilometri);
