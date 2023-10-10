@@ -1,20 +1,23 @@
-let km = ("Inserisci i km");
-console.log(km)
-let eta = ("Inserisci la tua età");
-console.log(eta)
-const price = 0.21;
-const twentyDiscount = 20/100;
-const fortyDiscount = 40/100;
-let travelCost = ( km * price);
-let fullPrice
+let nameSurname = document.getElementById('nome-cognome');
+let numberCode = document.getElementById('code');
+let ticketPrice = document.getElementById('price');
 
 const button =  document.querySelector('.btn-success');
 console.log(button);
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+}
 
 button.addEventListener('click', function(){
     let nome = document.getElementById('nome').value;
     let kilometri = document.getElementById('km').value;
-    
+    let eta = document.getElementById('eta').value;
+    const price = 0.21;
+    let travelCost = kilometri * price;
+    const twentyDiscount = 20/100;
+    const fortyDiscount = 40/100;
+    let fullPrice
+
     if(nome === '' || kilometri === ''){
         alert('Inserire i valori!')
     }
@@ -23,9 +26,27 @@ button.addEventListener('click', function(){
         alert('Inserire i valori!')
     }
 
+    if (eta === 'minorenne'){
+        fullPrice = travelCost - (travelCost * twentyDiscount);
+        console.log(fullPrice); 
+    } else if (eta === 'over-65'){
+        fullPrice = travelCost - (travelCost * fortyDiscount);
+        console.log(fullPrice);
+    } else {
+        fullPrice = travelCost;
+        console.log(fullPrice);
+    }
+
+    nameSurname.innerHTML = nome;
+    numberCode.innerHTML = getRndInteger(10000, 99999);
+    ticketPrice.innerHTML = fullPrice;
+
     console.log(nome);
     console.log(kilometri);
+
 });
+
+
 
 
 
