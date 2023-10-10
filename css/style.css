@@ -2,6 +2,10 @@
     width: 100%;
 }
 
+body{
+    background-color: #B91550;
+}
+
 input, select{
     border-radius: 6px;
     border: 1px solid red;

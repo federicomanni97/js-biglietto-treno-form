@@ -11,29 +11,33 @@
     <div class="wrapper">  
         <div class="container vh-100 border">
           <div class="row mt-3">  
-            <form class="d-flex justify-content-around fw-bold text-danger">
-              <div class="d-flex flex-column">  
-                <label for="fname">Nome e Cognome</label>
-                <input type="text" id="nome" name="fname" placeholder="Nome & Cognome">
-              </div>  
-              <div class="d-flex flex-column">
-                <label for="km">Km da percorrere</label>
-                <input type="text" id="km" name="lname" placeholder="Km">
-              </div>
-              <div class="d-flex flex-column">
-                <label for="cars">Fascia d'età:</label>
-                <select name="eta" id="eta">
-                    <option value="minorenne">Minorenne</option>
-                    <option value="maggiorenne">Maggiorenne</option>
-                    <option value="over-65">Over-65</option>
-                </select>
-              </div>  
-            </form>
-            <div class="text-center">
-                <button class="m-3 btn btn-success" type="button">Genera</button>
-                <button class="m-3 btn btn-secondary" type="button">Annulla</button>
+            <h3 class="text-center text-light">CALCOLA IL PREZZO  DEL TUO BIGLIETTO</h3> 
+            <div class="bg-light rounded-4 mt-3 p-5">
+                <form class="d-flex justify-content-around fw-bold text-danger">
+                <div class="d-flex flex-column col-3">  
+                    <label for="fname">Nome e Cognome</label>
+                    <input type="text" id="nome" name="fname" placeholder="Nome & Cognome">
+                </div>  
+                <div class="d-flex flex-column col-3">
+                    <label for="km">Km da percorrere</label>
+                    <input type="text" id="km" name="lname" placeholder="Km">
+                </div>
+                <div class="d-flex flex-column col-3">
+                    <label for="cars">Fascia d'età:</label>
+                    <select name="eta" id="eta">
+                        <option value="minorenne">Minorenne</option>
+                        <option value="maggiorenne">Maggiorenne</option>
+                        <option value="over-65">Over-65</option>
+                    </select>
+                </div>  
+                </form>
+                <div class="text-center mt-4">
+                    <button class="m-3 btn btn-success" type="button">Genera</button>
+                    <button class="m-3 btn btn-secondary" type="button">Annulla</button>
+                </div>
             </div>
           </div>  
+          <!-- secondo biglietto-->
         </div>    
     </div> 
     <script src="js/script.js"></script>
